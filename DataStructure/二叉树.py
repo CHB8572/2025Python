@@ -36,7 +36,7 @@ class BinaryTree:
             self.pre_order(current_node.left_child)
             self.pre_order(current_node.right_child)
 
-    def mid_order(self, current_node: Node):  # 中序遍历
+    def mid_order(self, current_node: Node):  # 中序遍历 左根右
         if current_node:
             self.mid_order(current_node.left_child)
             print(current_node.elem, end=" ")
